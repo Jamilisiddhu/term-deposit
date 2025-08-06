@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template # Added render_template
 from flask_cors import CORS
 import pickle
 from collections import Counter
@@ -92,6 +92,11 @@ except FileNotFoundError:
 # Initialize the Flask application and enable CORS
 app = Flask(__name__)
 CORS(app)
+
+# New route to serve the index.html file
+@app.route('/')
+def serve_index():
+    return render_template('index.html')
 
 # Define the API endpoint for predictions
 @app.route('/predict', methods=['POST'])
