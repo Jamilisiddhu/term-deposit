@@ -1,0 +1,10 @@
+prediction == yes
+40;management;married;tertiary;no;-17;yes;yes;cellular;11;may;474;1;256;1;success
+29;management;single;tertiary;no;572;no;no;cellular;16;dec;314;1;195;1;success
+31;admin.;single;secondary;no;223;yes;no;cellular;17;apr;508;1;315;11;success
+
+prediction == no
+38;entrepreneur;divorced;tertiary;no;7929;no;no;cellular;8;jul;182;3;-1;0;unknown
+41;entrepreneur;married;primary;no;39;yes;no;cellular;21;nov;549;2;-1;0;unknown
+39;housemaid;married;primary;no;267;no;no;unknown;9;jun;1151;5;-1;0;unknown
+
