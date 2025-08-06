@@ -91,7 +91,7 @@ except FileNotFoundError:
 
 # Initialize the Flask application and enable CORS
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/predict": {"origins": "https://term-deposit-2.onrender.com"}})
 
 # New route to serve the index.html file
 @app.route('/')
